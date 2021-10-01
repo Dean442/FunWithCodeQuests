@@ -135,6 +135,7 @@ public class Board extends JPanel implements ActionListener {
 
     private void move() {
 
+        //TODO: make the snake move
         for (int z = dots; z > 0; z--) {
             x[z] = x[(z - 1)];
             y[z] = y[(z - 1)];
@@ -159,6 +160,7 @@ public class Board extends JPanel implements ActionListener {
 
     private void checkCollision() {
 
+        //TODO: check for collisions with snake body
         for (int z = dots; z > 0; z--) {
 
             if ((z > 4) && (x[0] == x[z]) && (y[0] == y[z])) {
@@ -166,6 +168,7 @@ public class Board extends JPanel implements ActionListener {
             }
         }
 
+        //TODO: check for collisions with border and end the game if necessary
         if (y[0] >= B_HEIGHT) {
             inGame = false;
         }
@@ -182,6 +185,7 @@ public class Board extends JPanel implements ActionListener {
             inGame = false;
         }
 
+        //This will end the game for you
         if (!inGame) {
             timer.stop();
         }
@@ -211,11 +215,15 @@ public class Board extends JPanel implements ActionListener {
 
     private class TAdapter extends KeyAdapter {
 
+        /**
+         This class listens for the keyinput and sets the respective booleans so the game knows what to do
+         */
         @Override
         public void keyPressed(KeyEvent e) {
 
             int key = e.getKeyCode();
 
+            //TODO: pause the game if spacebar is pressed and resume it if its pressed again
             if(key == KeyEvent.VK_SPACE) {
                 paused = !paused;
                 if(paused){

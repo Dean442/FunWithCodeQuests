@@ -1,3 +1,5 @@
+package Selenide;
+
 import com.codeborne.selenide.Configuration;
 import lombok.extern.slf4j.Slf4j;
 import org.testng.annotations.Test;
@@ -50,6 +52,7 @@ public class Assignment {
         //TODO: take a 'nice' screenshot of Testautomation section. No sleeps.
         acceptCookies.should(disappear);
         screenshot("test");
+
 
     }
 
