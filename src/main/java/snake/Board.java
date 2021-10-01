@@ -142,27 +142,48 @@ public class Board extends JPanel implements ActionListener {
         }
 
         if (leftDirection) {
-
+            x[0] -= DOT_SIZE;
         }
 
         if (rightDirection) {
-
+            x[0] += DOT_SIZE;
         }
 
         if (upDirection) {
-
+            y[0] -= DOT_SIZE;
         }
 
         if (downDirection) {
-
+            y[0] += DOT_SIZE;
         }
     }
 
     private void checkCollision() {
 
         //TODO: check for collisions with snake body
+        for (int z = dots; z > 0; z--) {
+
+            if ((z > 4) && (x[0] == x[z]) && (y[0] == y[z])) {
+                inGame = false;
+            }
+        }
 
         //TODO: check for collisions with border and end the game if necessary
+        if (y[0] >= B_HEIGHT) {
+            inGame = false;
+        }
+
+        if (y[0] < 0) {
+            inGame = false;
+        }
+
+        if (x[0] >= B_WIDTH) {
+            inGame = false;
+        }
+
+        if (x[0] < 0) {
+            inGame = false;
+        }
 
         //This will end the game for you
         if (!inGame) {
@@ -195,7 +216,7 @@ public class Board extends JPanel implements ActionListener {
     private class TAdapter extends KeyAdapter {
 
         /**
-            This class listens for the keyinput and sets the respective booleans so the game knows what to do
+         This class listens for the keyinput and sets the respective booleans so the game knows what to do
          */
         @Override
         public void keyPressed(KeyEvent e) {
@@ -203,7 +224,14 @@ public class Board extends JPanel implements ActionListener {
             int key = e.getKeyCode();
 
             //TODO: pause the game if spacebar is pressed and resume it if its pressed again
-
+            if(key == KeyEvent.VK_SPACE) {
+                paused = !paused;
+                if(paused){
+                    timer.stop();
+                } else {
+                    timer.start();
+                }
+            }
 
             if ((key == KeyEvent.VK_LEFT) && (!rightDirection)) {
                 leftDirection = true;
