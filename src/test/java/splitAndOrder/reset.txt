@@ -1,11 +1,3 @@
-import lombok.extern.slf4j.Slf4j;
-import org.testng.annotations.Test;
-
-import java.util.*;
-
-@Slf4j
-public class splitAndOrder {
-
     /**
     Aufgabe:
     Sortiere die Wörter nach ihrer Anzahl absteigend, so dass die Ausgabe folgendermassen aussieht:
@@ -21,5 +13,3 @@ public class splitAndOrder {
         String words = "lars, cat, bit, cat, cauliflower, circus, rose, cat, lars";
 
     }
-
-}

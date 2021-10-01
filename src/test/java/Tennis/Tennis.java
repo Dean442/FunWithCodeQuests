@@ -1,3 +1,5 @@
+package Tennis;
+
 import lombok.extern.slf4j.Slf4j;
 import org.testng.annotations.Test;
 
@@ -13,8 +15,6 @@ public class Tennis {
         System.out.println(match);
 
         String winner;
-        //your code goes here
-
 
         System.out.print("And the winner is: ");
 
@@ -22,7 +22,7 @@ public class Tennis {
 
     private String playGame() {
         Random random = new Random();
-        int low = 10;
+        int low = 5;
         int high = 100;
         int result = random.nextInt(high-low) + low;
 
