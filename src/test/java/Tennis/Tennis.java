@@ -14,9 +14,9 @@ public class Tennis {
         String match = playGame();
         System.out.println(match);
 
-        String winner;
+        String winner = match.substring(match.length()-1);
 
-        System.out.print("And the winner is: ");
+        System.out.print("And the winner is: "+ winner);
 
     }
 
