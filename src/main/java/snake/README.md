@@ -1,4 +1,4 @@
-# Challenge: Snake
+# Snake
 ### Goal: Java experience and logical thinking
 
 #### expected time: 25min

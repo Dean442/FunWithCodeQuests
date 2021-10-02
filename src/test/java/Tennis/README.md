@@ -1,4 +1,4 @@
-# Challenge: Snake
+# A tennis game
 ### Goal: logical thinking
 
 #### expected time: under 5min

@@ -1,4 +1,4 @@
-# Challenge: Snake
+# UI testing with Selenide
 ### Goal: Selenium testing strategies, flexibility with new but similar frameworks
 
 #### expected time: 25min

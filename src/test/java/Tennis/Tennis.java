@@ -26,8 +26,28 @@ public class Tennis {
         int high = 100;
         int result = random.nextInt(high-low) + low;
 
-        String match = "a";
+        String match = ((result%2 == 0) ? aBegins(result) : bBegins(result));
 
+        return match;
+    }
+
+    private String bBegins(int result) {
+
+        String match="b";
+        for(int i = 1; i< result; i++){
+            if(i % 2 == 0) {
+                match += "b";
+            }else{
+                match += "a";
+            }
+        }
+        return match;
+
+    }
+
+    private String aBegins( int result) {
+
+        String match="a";
         for(int i = 1; i< result; i++){
             if(i % 2 == 0) {
                 match += "a";
