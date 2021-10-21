@@ -1,0 +1,12 @@
+# RestAssured
+### Goal: A simple understanding of Rest APIs
+
+#### expected time: under 5min
+
+---
+__quotes.rest__ is an api that provides a collection of quotes to whomever they may interest.
+
+Get the quote of the day and assure we have the right status before printing the quote and its author.
+
+Selenide is a simple wrapper for Selenium that provides a lot of ease of life for the user.
+The link to the documentation can be found in the assignment itself.

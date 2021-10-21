@@ -1,7 +1,7 @@
 # Split and order
 ### Goal: java experience, String manipulation, logical thinking
 
-#### expected time: 15min (+ 5min on version 2)
+#### expected time: 15min (+5min on version 2)
 
 ---
 
