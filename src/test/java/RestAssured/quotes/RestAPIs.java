@@ -1,5 +1,5 @@
 
-package RestAssured;
+package RestAssured.quotes;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
