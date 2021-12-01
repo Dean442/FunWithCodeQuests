@@ -1,6 +1,5 @@
 
 package RestAssured.quotes.cats;
-import RestAssured.cats.models.Cat;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.Assert;
