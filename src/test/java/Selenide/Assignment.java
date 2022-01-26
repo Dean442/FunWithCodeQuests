@@ -26,7 +26,7 @@ public class Assignment {
         $(byText("I agree")).click();
 
         //TODO: ensure the existence of the searchbar
-        final var input = $("input");
+        final var input = $(byName("q"));
         input.should(exist);
         //TODO: search for Manuel Grädel
         input.sendKeys("Manuel Grädel");
@@ -34,12 +34,11 @@ public class Assignment {
         //TODO: switch to picture tab
         input.pressEnter();
 
-
         //TODO: find the Picture from the akros website and click on it
         $(byText("Images")).click();
 
         //TODO: visit the akros website using the link on the picture
-        $(byText("Qualitätsmanagement")).click();
+        $(byText("Qualitätsmanagement - Akros")).click();
 
         //TODO: accept cookies
         switchTo().window(1);
