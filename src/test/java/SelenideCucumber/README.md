@@ -7,6 +7,12 @@
 #### expected time: 30min in total, or just 5-10 min. for the Cucumber scenarios only
 
 ---
+sources:
+<br>
+https://selenide.org/2016/09/28/bdd-with-selenide/
+<br>
+https://github.com/selenide-examples/cucumber
+
 _Help should be provided as soon as it is obvious the right idea or direction is found. We do not care about the google
 game._
 
