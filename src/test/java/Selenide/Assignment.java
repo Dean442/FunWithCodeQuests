@@ -6,8 +6,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selectors.byName;
-import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
 @Slf4j
@@ -15,7 +14,7 @@ public class Assignment {
 
     //Selenide documentation: https://selenide.org/documentation.html
 
-    private final By acceptGoogleTermsSelector = By.id("L2AGLb");
+    private final By acceptGoogleTermsSelector = byId("L2AGLb");
 
     @Test
     public void testOne() {
