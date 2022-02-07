@@ -2,16 +2,19 @@ package Selenide;
 
 import com.codeborne.selenide.Configuration;
 import lombok.extern.slf4j.Slf4j;
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
-import static com.codeborne.selenide.Condition.*;
 
 @Slf4j
 public class Assignment {
 
     //Selenide documentation: https://selenide.org/documentation.html
+
+    private final By acceptGoogleTermsSelector = byId("L2AGLb");
 
     @Test
     public void testOne() {
@@ -20,14 +23,18 @@ public class Assignment {
         Configuration.browser = "chrome";
 
         //TODO: go to https://www.google.com
-        open( "https://www.google.com");
+        open("https://www.google.com");
 
         //TODO: get rid of terms of service
-        $(byText("I agree")).click();
+        // bad: works only for one language
+//        $(byText("I agree")).click();
+        // better: works for all languages, even though id looks generated
+        $(acceptGoogleTermsSelector).click();
 
         //TODO: ensure the existence of the searchbar
         final var input = $(byName("q"));
         input.should(exist);
+
         //TODO: search for Manuel Grädel
         input.sendKeys("Manuel Grädel");
 
@@ -51,8 +58,6 @@ public class Assignment {
         //TODO: take a 'nice' screenshot of Testautomation section. No sleeps.
         acceptCookies.should(disappear);
         screenshot("test");
-
-
     }
 
 }
