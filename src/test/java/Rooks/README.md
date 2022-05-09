@@ -46,14 +46,14 @@ Write a function that returns true if two rooks can attack each other, and false
             <tbody>
                 <tr>
                     <th></th>
-                    <th>a</th>
-                    <th>b</th>
-                    <th>c</th>
-                    <th>d</th>
-                    <th>e</th>
-                    <th>f</th>
-                    <th>g</th>
-                    <th>h</th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                    <th>E</th>
+                    <th>F</th>
+                    <th>G</th>
+                    <th>H</th>
                 </tr>
                 <tr>
                     <th>8</th>
