@@ -21,26 +21,25 @@ Write a function that returns true if two rooks can attack each other, and false
     canCapture(["F5", "C8"]) ➞ false
 
 
-<!DOCTYPE html>
 <html>
     <head>
-    <title></title>
-    <meta charset="UTF-8">
-        <style>
-            .chess-board { border-spacing: 0; border-collapse: collapse; }
-            .chess-board th { padding: .5em; }
-            .chess-board th + th { border-bottom: 1px solid #000; }
-            .chess-board th:first-child,
-            .chess-board td:last-child { border-right: 1px solid #000; }
-            .chess-board tr:last-child td { border-bottom: 1px solid; }
-            .chess-board th:empty { border: none; }
-            .chess-board td { width: 1.5em; height: 1.5em; text-align: center; font-size: 32px; line-height: 0;}
-            .chess-board .light { background: #eee; }
-            .chess-board .dark { background: #aaa; }
-            td {
-                color:black;
-            }
-        </style>
+        <title></title>
+        <meta charset="UTF-8">
+            <style>
+                .chess-board { border-spacing: 0; border-collapse: collapse; }
+                .chess-board th { padding: .5em; }
+                .chess-board th + th { border-bottom: 1px solid #000; }
+                .chess-board th:first-child,
+                .chess-board td:last-child { border-right: 1px solid #000; }
+                .chess-board tr:last-child td { border-bottom: 1px solid; }
+                .chess-board th:empty { border: none; }
+                .chess-board td { width: 1.5em; height: 1.5em; text-align: center; font-size: 32px; line-height: 0;}
+                .chess-board .light { background: #eee; }
+                .chess-board .dark { background: #aaa; }
+                td {
+                    color:black;
+                }
+            </style>
     </head>
     <body>
         <table class="chess-board">
