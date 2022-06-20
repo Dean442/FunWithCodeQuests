@@ -1,5 +1,5 @@
 # Snake
-### Goal: Java experience and logical thinking
+### Goal: Java experience, code reading and logical thinking
 
 #### expected time: 25min
 
