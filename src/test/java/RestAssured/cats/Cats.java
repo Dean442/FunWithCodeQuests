@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class Cats {
 
-    private CatsService catsService = new CatsService();
+    private final CatsService catsService = new CatsService();
 
     @Test
     public void postCatTest() {

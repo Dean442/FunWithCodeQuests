@@ -11,12 +11,12 @@ public class SplitAndOrder {
     /**
     Aufgabe:
     Sortiere die Wörter nach ihrer Anzahl absteigend, so dass die Ausgabe folgendermassen aussieht:
+     1 x bit
      3 x cat
+     1 x cauliflower
+     1 x circus
      2 x lars
      1 x rose
-     1 x circus
-     1 x cauliflower
-     1 x bit
     */
     @Test
     public void Assignment2() {
