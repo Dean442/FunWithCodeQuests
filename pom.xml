@@ -66,6 +66,11 @@
             <version>RELEASE</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>de.taimos</groupId>
+            <artifactId>totp</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
 </project>
