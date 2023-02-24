@@ -22,17 +22,21 @@ public class SplitAndOrder {
     public void Assignment2() {
         String words = "lars, cat, bit, cat, cauliflower, circus, rose, cat, lars";
 
-        var str = Arrays.stream(words.split(", ")).toList();
+        List<String> wordList = Arrays.stream(words.split(", ")).sorted().toList();
+        List<String> distinct = new ArrayList<>(wordList.stream().distinct().toList());
 
-        var sortedArray = str.stream().distinct().sorted().toList();
-
-        for (String ite : sortedArray) {
-            int counter = 0;
-            for (String word : str) {
-                if (ite.equals(word))
-                    counter++;
+        for(int i=0; i < distinct.size(); i++){
+            int n = 0;
+            for (String s : wordList) {
+                if (Objects.equals(distinct.get(i), s)) {
+                    n++;
+                }
             }
-            System.out.println(counter+ " x " + ite);
+            distinct.set(i, n+" x "+ distinct.get(i));
+        }
+        var counted = distinct.stream().sorted(Comparator.reverseOrder()).toList();
+        for(String item : counted) {
+            System.out.println(item);
         }
 
     }
