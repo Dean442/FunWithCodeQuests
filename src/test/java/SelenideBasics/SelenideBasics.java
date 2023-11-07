@@ -1,13 +1,9 @@
 package SelenideBasics;
 
 import com.codeborne.selenide.Configuration;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import lombok.extern.slf4j.Slf4j;
 import org.testng.annotations.Test;
-
-import static com.codeborne.selenide.Selectors.byId;
-import static com.codeborne.selenide.Selectors.byTagName;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
 
 @Slf4j
 public class SelenideBasics {
@@ -19,6 +15,7 @@ public class SelenideBasics {
         Configuration.headless = false;
         Configuration.holdBrowserOpen = true;
         Configuration.browser = "chrome";
+        WebDriverManager.chromedriver().setup();
 
     }
 
